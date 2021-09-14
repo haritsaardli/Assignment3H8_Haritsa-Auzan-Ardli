@@ -34,9 +34,9 @@ fetch(BASE_URL)
         const sembuh = (dataX.reduce((n, {kasusSemb}) => n + kasusSemb,0))
         const meninggal = (dataX.reduce((n, {kasusMeni}) => n + kasusMeni,0))
         
-        totalPostif.innerHTML = "Positif : " + positif
-        totalSembuh.innerHTML = "Sembuh : " + sembuh
-        totalMeninggal.innerHTML = "Meninggal : " + meninggal
+        totalPostif.innerHTML = `Positif : ${positif}`
+        totalSembuh.innerHTML = `Sembuh : ${sembuh}`
+        totalMeninggal.innerHTML = `Meninggal : ${meninggal}`
     });
 
       
